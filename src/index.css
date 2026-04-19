@@ -1,0 +1,176 @@
+.Plan{
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(12, 242, 12);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+.Plan .planName{
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  color: black;
+}
+.Plan .planP{
+  font-family:Arial, sans-serif;
+  color: black;
+}
+
+
+
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8faf9;
+  color: #1f2937;
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+/* left side */
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.nav_left h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* center menu */
+.nav_ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav_li a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav_li a:hover {
+  color: #10b981;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* default button */
+.button.default {
+  background: transparent;
+  color: #111827;
+}
+
+/* primary button */
+.button.primary {
+  background: #10b981;
+  color: white;
+}
+
+.button.primary:hover {
+  background: #059669;
+}
+
+/* ===== HERO SECTION ===== */
+.Hero {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* main title */
+.welcome {
+  font-size: 52px;
+  font-weight: 700;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.2;
+}
+
+/* highlight word (optional if you want span later) */
+.welcome span {
+  color: #10b981;
+}
+
+/* paragraph */
+.welcomP {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background: white;
+  margin-top: 100px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* footer left */
+.footerLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* footer right */
+.footerRight {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.footerRight .link {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.footerRight .link:hover {
+  color: #10b981;
+}
+
+/* footer text */
+.footer p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  font-size: 12px;
+  color: #9ca3af;
+}
