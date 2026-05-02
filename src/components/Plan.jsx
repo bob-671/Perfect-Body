@@ -1,19 +1,41 @@
-function Plan(props){
-    const handleclick = () =>{
-    };
-   return(
+function Plan(props) {
 
-       <div className="Plan">
-            <h1 className="planName">{props.name}</h1>
-            <h2 className="price">{props.price}$</h2>
-            <p className="planP">{props.desc}</p>
-            <button onClick={handleclick}> choose plan</button>
-       </div>);
-  
-   }
-Plan.defaultprops={
-    name:"plane name",
-    price: 0,
-    desc:"description"
+  const handleClick = () => {
+    console.log(`Selected plan: ${props.name}`);
+    // تقدر دير navigate هنا ولا checkout
+  };
+
+  return (
+    <div className={`plan-card ${props.popular ? "popular" : ""}`}>
+
+      {props.popular && <div className="badge">Most Popular</div>}
+
+      <h2 className="plan-title">{props.name}</h2>
+
+      <h1 className="plan-price">
+        ${props.price}
+        <span className="duration">/{props.duration}</span>
+      </h1>
+
+      <ul className="features">
+        {props.features.map((feature, index) => (
+          <li key={index}>✔ {feature}</li>
+        ))}
+      </ul>
+
+      <button onClick={handleClick} className="plan-btn">
+        Choose Plan
+      </button>
+    </div>
+  );
 }
-export default Plan
+
+Plan.defaultProps = {
+  name: "Plan Name",
+  price: 0,
+  duration: "month",
+  features: [],
+  popular: false,
+};
+
+export default Plan;
