@@ -8,7 +8,7 @@ const menuItems = [
   { name: "AI Tracker", path: "/AiTrucker", icon: "🤖" },
   { name: "Meal Plan", path: "/MealPlan", icon: "🍽️" },
   { name: "Consultations", path: "/consultations", icon: "📅" },
-  { name: "Profile", path: "/profile", icon: "👤" },
+  { name: "Profile", path: "/Profile", icon: "👤" },
 ];
  
 const initialLog = [

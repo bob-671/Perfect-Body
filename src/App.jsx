@@ -5,6 +5,8 @@ import Login from './pages/Login';
 import User from './dashboards/User';
 import AiTracker from './dashboards/AiTracker';
 import MealPlan from './dashboards/MealPlan';
+import Consultations from './dashboards/Consultations';
+import Profile from './dashboards/Profile';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -19,6 +21,8 @@ function App() {
           <Route path="/User" element={<User />} />
           <Route path="/AiTracker" element={<AiTracker />} />
           <Route path="/MealPlan" element={<MealPlan />} />
+          <Route path="/Consultations" element={<Consultations />} />
+          <Route path="/Profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
